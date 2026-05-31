@@ -1,0 +1,5 @@
+VibeLearn skill bundle
+Copyright (c) 2026 Li-He-Yu
+
+This skill bundle originated from the VibeLearn project by Li-He-Yu.
+When redistributing modified copies, preserve required attribution and modification notices under Apache License 2.0.

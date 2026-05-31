@@ -1,0 +1,48 @@
+project_name: "My Course Project"
+
+paths:
+  materials_root: "."
+  notes_dir: "./#Notes"
+  test_dir: "./#Test"
+  ans_dir: "./#Ans"
+  cache_root: "./vlcache"
+  pdf_text_cache_dir: "./vlcache/pdf_text"
+  pdf_markdown_cache_dir: "./vlcache/pdf_md"
+  manifest_dir: "./vlcache/manifests"
+
+cache:
+  prefer_cached_pdf_text: true
+  prefer_cached_pdf_markdown: true
+  search_cache_first_for_source_lookup: true
+  reextract_when_source_newer: true
+  keep_cache_in_git: false
+
+generation:
+  default_bundle: "notes_test_ans"
+  notes_density_hint: "adaptive"
+  test_density_hint: "adaptive"
+  answer_detail_hint: "balanced"
+  grading_strictness: "exam_strict"
+
+naming:
+  notes_pattern: "Notes -- Ch{chapter} {topic}.md"
+  test_pattern: "Test -- Ch{chapter} {topic}.md"
+  ans_pattern: "Ans -- Ch{chapter} {topic}.md"
+  single_file_topic_rule: "preserve_source_filename"
+  multi_file_topic_rule: "derive_combined_topic"
+
+templates:
+  notes:
+    single: null
+    multi: null
+  test:
+    single: null
+    multi: null
+  grading_example: null
+
+guidance:
+  notes_style_reference: null
+  test_style_reference: null
+  answer_style_reference: null
+  grading_style_reference: null
+  extra_rules_reference: null

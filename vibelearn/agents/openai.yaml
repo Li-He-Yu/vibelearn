@@ -1,0 +1,7 @@
+interface:
+  display_name: "VibeLearn"
+  short_description: "Generate exam notes, tests, answers, and grading from course materials"
+  default_prompt: "Use $vibelearn to turn course materials into exam-oriented notes, tests, answer keys, grading feedback, or an initial project config."
+
+policy:
+  allow_implicit_invocation: true

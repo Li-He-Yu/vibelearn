@@ -1,0 +1,13 @@
+.codegraph/
+__pycache__/
+
+# Project runtime state
+#Notes/
+#Test/
+#Ans/
+vlcache/
+/vibelearn.config.yaml
+
+# Temporary local files
+*.url
+.tmp_*/

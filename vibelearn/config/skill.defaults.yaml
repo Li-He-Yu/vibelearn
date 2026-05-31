@@ -1,0 +1,27 @@
+skill:
+  project_config_filename: "vibelearn.config.yaml"
+
+references:
+  workflow: "./vibelearn/references/workflow.md"
+  output_rules: "./vibelearn/references/output-rules.md"
+  quality_rules: "./vibelearn/references/quality-rules.md"
+  template_guide: "./vibelearn/assets/ASSETS.md"
+
+preferences:
+  language_file: "./vibelearn/config/language.md"
+  content_file: "./vibelearn/config/content.md"
+
+templates:
+  notes:
+    single: "./vibelearn/assets/Template__Single_File_Input__Notes_Summary_Outline_Terms.md"
+    multi: "./vibelearn/assets/Template__Multi_File_Input__Notes_Summary_Outline_Terms.md"
+  test:
+    single: "./vibelearn/assets/Template__Single_File_Input__Test.md"
+    multi: "./vibelearn/assets/Template__Multi_File_Input__Test.md"
+  grading_example: "./vibelearn/assets/Template__Grading_Example.md"
+
+scripts:
+  extract_pdf_to_cache: "./vibelearn/scripts/extract_pdf_to_cache.py"
+  pdf_to_text_compat: "./vibelearn/scripts/pdf_to_text.py"
+  md_grader: "./vibelearn/scripts/md_grader.py"
+  init_project_config: "./vibelearn/scripts/init_project_config.py"

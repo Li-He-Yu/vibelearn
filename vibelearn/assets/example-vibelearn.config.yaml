@@ -1,0 +1,48 @@
+project_name: "My Course Project"
+
+paths:
+  materials_root: "."
+  notes_dir: "./#Notes"
+  test_dir: "./#Test"
+  ans_dir: "./#Ans"
+  cache_root: "./vlcache"
+  pdf_text_cache_dir: "./vlcache/pdf_text"
+  pdf_markdown_cache_dir: "./vlcache/pdf_md"
+  manifest_dir: "./vlcache/manifests"
+
+cache:
+  prefer_cached_pdf_text: true
+  prefer_cached_pdf_markdown: true
+  search_cache_first_for_source_lookup: true
+  reextract_when_source_newer: true
+  keep_cache_in_git: true
+
+generation:
+  default_bundle: "notes_test_ans" # or a narrower default if your project consistently wants one branch
+  notes_density_hint: "adaptive" # e.g. adaptive / concise / dense
+  test_density_hint: "adaptive" # e.g. adaptive / concise / dense
+  answer_detail_hint: "balanced" # e.g. concise / balanced / detailed
+  grading_strictness: "exam_strict" # e.g. lenient / balanced / exam_strict
+
+naming:
+  notes_pattern: "Notes -- Ch{chapter} {topic}.md"
+  test_pattern: "Test -- Ch{chapter} {topic}.md"
+  ans_pattern: "Ans -- Ch{chapter} {topic}.md"
+  single_file_topic_rule: "preserve_source_filename"
+  multi_file_topic_rule: "derive_combined_topic"
+
+templates:
+  notes:
+    single: null # optional project-owned override, e.g. ./templates/private-notes-single.md
+    multi: null
+  test:
+    single: null
+    multi: null
+  grading_example: null
+
+guidance:
+  notes_style_reference: null # optional project-owned markdown with desired note style
+  test_style_reference: null # optional project-owned markdown with desired question style
+  answer_style_reference: null # optional project-owned markdown with answer-key preferences
+  grading_style_reference: null # optional project-owned markdown with grading tone or strictness nuances
+  extra_rules_reference: null # optional catch-all markdown for project-specific constraints
